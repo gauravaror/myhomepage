@@ -1,0 +1,19 @@
+<div class="container main-bar home-border topnavbar">
+  <div class="attached">
+    <div class="name" onclick="void(0);">
+      <span id="thinking">
+        <a href="#">
+        <%= image_tag "thinker.jpg", width: "150em", height: "30em" %>
+        </a>
+      </span>
+    <ul class="right">
+      <li> <%= link_to "Home", root_path %></li>
+      <li> <%= link_to "Blog", blog_path%></li>
+      <li> <%= link_to "Projects", projectdemos_path%></li>
+      <li> <%= link_to "Papers", papers_path%></li>
+      <li> <%= link_to "Pictures",pictures_path%></li>
+      <li> <%= link_to "Contact", contact_path%> </li>
+    </ul>
+    </div>
+  </div>
+</div>
