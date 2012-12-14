@@ -7,9 +7,6 @@ def contact
 @suscriber = Suscriber.new
 end
 
-def blog
-end
-
 def projectdemos
 end
 

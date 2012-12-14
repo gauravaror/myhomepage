@@ -1,0 +1,27 @@
+
+<div class="row container intro">
+<div class="six columns offset-by-three login">
+<h1> Log In! </h1>
+
+<%= form_tag :controller => "sessions", :action => "create" do %>
+  
+  <p class="font">
+    <%= label_tag :email, "Email :" %> 
+    <%= text_field_tag :email %>
+  </p>
+
+  <p class="font">
+    <%= label_tag :password, "Password:" %>
+    <%= password_field_tag :password %>
+  </p>
+  
+  <p class="font">
+  <%= submit_tag "Log in!"%>
+  </p>
+
+<% end %>
+
+  <p class="font"> Don't have an account ? </p><br>
+  <p class="font"> <%= link_to "Sign up now!!", signup_path %></p>
+</div>
+</div>

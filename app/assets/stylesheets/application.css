@@ -222,3 +222,14 @@ html,body {
 @import url(http://fonts.googleapis.com/css?family=Ropa+Sans:400,400italic);
 @import url(http://fonts.googleapis.com/css?family=News+Cycle);
 
+.signup h1 {
+  color: #626363;
+}
+
+.login h1 {
+  color: #626363;
+}
+
+.signup {
+  background-image:url('social_bg.png');
+}

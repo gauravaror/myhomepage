@@ -1,0 +1,26 @@
+<div class="container row intro">
+<div class="ten columns offset-by-one">
+<h1> Create New Blog Post! </h1>
+  <%= form_for @post do |f| %>
+    <p>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </p>
+
+    <p>
+      <%= f.label :content %>
+      <%= f.text_area :content %>
+    </p>
+    
+    <p>
+      <%= f.label :tag %>
+      <%= f.text_field :tag %>
+    </p>
+  
+    <p>
+      <%= f.submit "Create Post" %>
+    </p>
+  <% end %>
+
+</div>
+</div>
