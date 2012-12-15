@@ -1,6 +1,14 @@
 Myhomepage::Application.routes.draw do
 
   resources :suscribers
+  resources :users
+  resources :sessions
+  resources :posts do
+    resources :comments 
+  end
+  resources :comments
+
+
   root to: 'static_pages#home'
   match '/home', to: 'static_pages#home'
   match '/contact', to: 'static_pages#contact'
@@ -8,6 +16,10 @@ Myhomepage::Application.routes.draw do
   match '/projectdemos', to: 'static_pages#projectdemos'
   match '/papers', to: 'static_pages#papers'
   match '/pictures', to: 'static_pages#pictures'
+  match '/login', to: 'sessions#new'
+  match '/logout', to: 'sessions#destroy'
+  match '/signup', to: 'users#new'
+  match '/tag/:id', to: 'posts#tag',as: 'tagspost'
   
 
   # The priority is based upon order of creation:
