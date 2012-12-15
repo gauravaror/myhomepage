@@ -1,0 +1,24 @@
+<div class="container row intro"
+<h3 class="fonth"> Edit Comment!! </h3>
+
+ <%= form_for [@article,@comment] do |com| %>
+
+    <div class="formfield">
+      <%= com.label :name %>
+      <%= com.text_field :name%>
+    </div>
+    
+    <div class="formfield">
+      <%= com.label :email %>
+      <%= com.text_field :email%>
+    </div>
+
+
+    <div class="formfield">
+      <%= com.label :comment %>
+      <%= com.text_field :comment%>
+    </div>
+
+    <p><%= com.submit "Edit Comment"%></p>
+  <%end%>
+</div>

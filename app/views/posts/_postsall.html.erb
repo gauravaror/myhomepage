@@ -1,0 +1,11 @@
+<div class="two columns">
+<div id="postsall">
+    <h3> Posts:</h3> 
+      <p>
+      <% @postsall.each do |p| %>
+        <%= link_to p.title,post_path(p.id) %> <br /> 
+      <%end%>
+  
+    </p>
+</div>
+</div>

@@ -1,11 +1,49 @@
 <div class="row container intro">
-<div class="nine columns offset-by-two">
+<div class="eight columns offset-by-two">
   <div class="blogpost"%>
   <h1 class="blogposttitle"> <%= link_to @post.title,post_path(@post) %> </h1>
+    <p class="content"> <%= @post.content  %> </p>
     <p>  <%= link_to "Edit", edit_post_path(@post.id) if current_user %> &nbsp; 
      <%= link_to "Delete", post_path(@post.id), :confirm =>  "Are you sure?", :method => :delete if current_user %> </p> 
-  <p class="content"> <%= @post.content  %> </p>
-  <p class="tag"> <%= @post.tag %> </p>
+    <div class="Tagsonbase">
+      <%= render 'tags' %>
+    </div>
   </div>
+  <div class="comments">
+  <h2 class="blogpost"> Comments!!! </h2>
+  
+  <% @comments.each do |com| %>
+    <div class="comment">
+    <p class="commentername"> <%=com.name %> wrote: </p>
+    <p class="editdelete"> <%= link_to "Edit", edit_post_comment_path(@post,com)  %> | 
+    <%=  link_to "Delete", post_comment_path(@post,com) ,:confirm => "Are you Sure",:method => :delete  %> </p>
+    <p class="commentconetent"> <%= com.comment %> </p>
+    </div>
+  <%end%>
+   </div>
+  <%= form_for [@post,@new_comment] do |ncomment| %>
+
+  <div class="formfield">
+    <%= ncomment.label :name %>
+    <%= ncomment.text_field :name %>
+  </div>
+
+  <div class="formfield">
+    <%= ncomment.label :email %>
+    <%= ncomment.text_field :email %>
+  </div>
+
+  <div class="formfield">
+    <%= ncomment.label :comment %>
+    <%= ncomment.text_area :comment %>
+  </div>
+
+    <%= ncomment.submit "Comment" %>
+
+  <%end%>
+
+</div>
+<%= render "postsall" %>
+<%= render "tagsall" %>
 </div>
 </div>

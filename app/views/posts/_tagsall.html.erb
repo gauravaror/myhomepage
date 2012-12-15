@@ -1,0 +1,11 @@
+<div class="two columns">
+<div id="tagsall">
+    <h3> Tags:</h3> 
+      <p>
+      <% @tagsall.each do |t| %>
+        <%= link_to t.name,tagspost_path(t.id) %> <br /> 
+      <%end%>
+  
+    </p>
+</div>
+</div>

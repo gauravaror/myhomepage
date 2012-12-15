@@ -1,0 +1,25 @@
+<div class="intro row container">
+  
+<div class="one columns">
+    <% if current_user %>
+      <%= link_to "Create Post", new_post_path %>
+    <% end %>
+</div>
+<div class="eight columns offset-by-one">
+  <% @posts.each do |post| %>
+    <div class="blogpost post" >
+    <h1> <%= link_to post.title, post_path(post.id) %> </h1>
+    <p>  <%= post.content %> </p>
+    <p>  <%= link_to "Edit", edit_post_path(post.id) if current_user %> &nbsp; 
+      <%= link_to "Delete", post_path(post.id), :confirm =>  "Are you sure?", :method => :delete if current_user %> </p> 
+      <% if @tagspost %>
+        <% @tags = @tagspost[post.id] %>
+      <%end%>
+      <%= render 'tags' %>
+    </div>
+  <% end %>
+  </div>  
+<%= render "postsall"%>
+<%= render "tagsall"%>
+</div>
+</div>

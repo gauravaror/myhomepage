@@ -1,0 +1,9 @@
+<div class="tags">
+    <h4> Tags:</h4> 
+      <p>
+      <% @tags.each do |t| %>
+        <%= link_to t.name,tagspost_path(t.id) %> &nbsp; 
+      <%end%>
+  
+    </p>
+</div>

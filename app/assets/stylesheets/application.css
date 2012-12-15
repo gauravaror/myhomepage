@@ -12,7 +12,20 @@
  *= require foundation_and_overrides
  *= require_tree .
  */
+#body {
+background-color:#ECF6CE;
+}
 
+#tagsall {
+  background-color:#EFF8FB;
+}
+#postsall {
+  background-color:#EFF8FB;
+}
+
+.post {
+  background-color:#EFF8FB;
+}
 ul.right {
   list-style-type:none;
 /*  marin:2px;*/
