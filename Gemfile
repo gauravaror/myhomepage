@@ -4,6 +4,8 @@ gem 'rails', '3.2.8'
 gem "bcrypt"
 gem "dynamic_form"
 
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'sass-rails', '>= 3.2'
 
 
 # Bundle edge Rails instead:
