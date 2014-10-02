@@ -1,22 +1,24 @@
 
   <div class="row container intro">
+    <div class="content col-sm-10 col-sm-offset-2" >
 
-    <!-- Contact Details -->
-    <div class="">
-
-      <h3 class=fonth">Get in Touch!</h3>
+      <h3 class=font">Get in Touch!</h3>
       <p class="font">I would love to hear from you. I would be glad if you suscribe for world's most crappiest article with gurantee of some sense. You can always reach out to me <em>any time</em> through Gmail, Facebook, IRC, Twitter.</p>
 
       <%= form_for @suscriber do |s| %>
       <%= s.label :name %>
+      <br>
+
       <%= s.text_field :name %>
-    
+      <br>
       <%= s.label :emailid %>
+      <br>
       <%= s.text_field :emailid %>
-        
+        <br>
       <%= s.label :whatsup %>
+      <br>
       <%= s.text_area :whatsup %>
-      
+      <br>
       <%= s.submit %>
     <% end %>
 

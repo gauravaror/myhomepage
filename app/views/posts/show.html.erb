@@ -1,5 +1,5 @@
 <div class="row container intro">
-<div class="eight columns offset-by-two">
+<div class="col-sm-8 col-sm-offset-2">
   <div class="blogpost"%>
   <h1 class="blogposttitle"> <%= link_to @post.title,post_path(@post) %> </h1>
     <p class="content"> <%= @post.content  %> </p>
@@ -25,16 +25,19 @@
 
   <div class="formfield">
     <%= ncomment.label :name %>
+    <br>
     <%= ncomment.text_field :name %>
   </div>
 
   <div class="formfield">
     <%= ncomment.label :email %>
+    <br>
     <%= ncomment.text_field :email %>
   </div>
 
   <div class="formfield">
     <%= ncomment.label :comment %>
+    <br>
     <%= ncomment.text_area :comment %>
   </div>
 

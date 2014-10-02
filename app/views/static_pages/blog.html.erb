@@ -1,5 +1,5 @@
-<div class="intro row container">
-<div class="ten columns offset-by-one">
+<div class="row container intro">
+  <div class="content col-sm-10 col-sm-offset-2" >
   <% @posts.each do |post| %>
     <div class="blogpost">
     <h1> <%= link_to post.title, post_path(post.id) %> </h1>
@@ -9,6 +9,6 @@
     <p>  <%= post.tag %> <p>
     </div>
   <% end %>
-  </div>  
+
 </div>
 </div>

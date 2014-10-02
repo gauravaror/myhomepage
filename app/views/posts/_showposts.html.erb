@@ -1,11 +1,11 @@
 <div class="intro row container">
   
-<div class="one columns">
+<div class="col-sm-1">
     <% if current_user %>
       <%= link_to "Create Post", new_post_path %>
     <% end %>
 </div>
-<div class="eight columns offset-by-one">
+<div class="col-sm-8 col-sm-offset-1">
   <% @posts.each do |post| %>
     <div class="blogpost post" >
     <h1> <%= link_to post.title, post_path(post.id) %> </h1>
