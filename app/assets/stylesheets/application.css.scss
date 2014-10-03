@@ -1,0 +1,252 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require foundation_and_overrides
+ *= require_tree .
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+ 
+#body {
+background-color:#ECF6CE;
+}
+
+#tagsall {
+  background-color:#EFF8FB;
+}
+#postsall {
+  background-color:#EFF8FB;
+}
+
+.post {
+  background-color:#EFF8FB;
+}
+ul.right {
+  list-style-type:none;
+/*  marin:2px;*/
+  padding:2px;
+  clear: both;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.container {
+  margin-right: auto !important;
+}
+
+li {
+  float: left;
+}
+
+.right a {
+  margin-top: 50px;
+}
+.right1 a {
+  display: block;
+  width: 80px;
+  color: white;
+  margin: 5px !important;
+  padding: auto !important;
+  text-align: left;
+  position: relative;
+}
+a#main {
+  display: block;
+  width:10%;
+  height:100%;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Proxima Nova';
+  text-decoration:bold;
+  color:white;
+  float:left;
+}
+
+#navlink {
+  margin-left: 10px;
+}
+/*.main-bar .attached > ul.right
+{
+overflow: hidden;
+float: right;
+}
+
+.main-bar ul {
+line-height: 45px;
+list-style: none;
+}
+*/
+
+.main-bar {
+  width: 100%;
+  height: 7.1em;
+  background-image:url('background.jpg');
+  background-repeat:repeat-x;
+/*  background-color:blue;*/
+  flow:hidden;
+}
+
+.social_block {
+  width: 100%;
+  height: 44px;
+/*  background-image:url('background.jpg');*/
+  background-image:url('social_bg.png');
+  background-repeat:repeat-x;
+  background-color:#3FA3C9;
+  flow:auto;
+  opacity:0.9;
+}
+
+div.name {
+margin-left:50px;
+}
+
+.attached {
+  margin: 0 auto;
+}
+
+#copyright {
+  margin-top: 0px;
+  background-image:url('social_bg.png');
+  background-repeat:repeat-x;
+  background-color:#3FA3C9;
+  flow:auto;
+  border:5px solid #3FA3C3;
+  opacity:0.9;
+  margin-bottom: 0px;
+}
+
+.footer {
+  text-align:center;
+}
+
+p {
+  margin: 5px !important;
+  padding: 5px !important;
+
+}
+
+.align1 {
+  margin: auto;
+  padding: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.connect {
+  margin-left:50px;
+}
+.clinks {
+  margin-right:50px;
+}
+.wrapper {
+  margin: auto;
+}
+
+.main-bar ul {position:absolute;top:0;right:5px;padding-right:50px;}
+.main-bar ul li {float:left;min-height:44px;font-weight:bold;font-size:14px;line-height:44px;}
+.main-bar ul li a, .social_block ul li a:visited {color:#fff;display:block;float:left;position:relative;padding:0 16px 0 46px;}
+.main-bar:before {content:'';display:block;width:100%;height:7em;position:absolute;top:0;left:0;background:url('social_shadow.png') center top repeat-y;}
+.main-bar ul li a:after {content:'';position:absolute;top:0;left:0;display:block;height:44px;width:100%;background:url('white_dot.png');}
+.main-bar ul li:hover a:after {display:none;}
+/*.social_block:after {content:'';display:block;width:100%;height:44px;position:absolute;top:0;left:0;background:url('social_bg.png') center top no-repeat;}*/
+.social_block:before {content:'';display:block;width:100%;height:44px;position:absolute;top:0;left:0;background:url('social_shadow.png') center top no-repeat;}
+.social_block .wraper {z-index:2;}
+.social_block p {color:#fff;line-height:44px;padding-left:0;}
+.social_block p:after {content:'';padding-right:12px;background:url('sprite.png') 6px -10px no-repeat;}
+.social_block ul {position:absolute;top:0;right:5px;}
+.social_block ul li {float:left;min-height:44px;font-weight:bold;font-size:14px;line-height:44px;}
+.social_block ul li a, .social_block ul li a:visited {color:#fff;display:block;float:left;position:relative;padding:0 16px 0 46px;}
+.social_block ul li a:before {content:'';background:url('sprite.png') 0 -31px no-repeat;z-index:2;position:absolute;top:8px;left:16px;display:block;width:22px;height:26px;} 
+.social_block ul li.facebook a:before {background-position:0 -31px;}
+.social_block ul li.twitter a:before {background-position:-36px -31px;}
+.social_block ul li.linkedin a:before {background-position:-73px -31px;}
+.social_block ul li.rss a:before {background-position:-110px -31px;}
+.social_block ul li.dribbble a:before {background-position:-147px -31px;}
+.social_block ul li.google a:before {background-position:-184px -31px;}
+.social_block ul li a:after {content:'';position:absolute;top:0;left:0;display:block;height:44px;width:100%;background:url('white_dot.png');}
+.social_block ul li:hover a:after {display:none;}
+
+.pic {
+  border: 2px solid black;
+  background-image:url('gaurav.jpg');
+  padding-top:30px; 
+  margin-top:30px; 
+  height: 200px;
+}
+
+div.intro {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+div.myinfo h4 { 
+  margin-top: 0;
+  padding-left: 20px;
+}
+
+div.topnavbar {
+  position:fixed;
+  top:0;
+  clear:both;
+  overflow: hide;
+  z-index: 99;
+}
+
+div .footerbox {
+  position: fixed;
+  bottom:0;
+}
+
+div .intro {
+  padding-top: 100px;
+  z-index: -1;
+}
+
+
+html,body {
+  height: 100%;
+}
+
+.font {
+  font-family: 'Droid Sans','News Cycle','Ropa Sans', sans-serif;
+  color: #626363;
+  font-size: 15pt; 
+  padding-bottom:30px;
+  text-align:justify;
+}
+.firstpara {
+  text-indent:50px;
+ }
+
+.fonth {
+  font-family: 'Droid Sans','News Cycle','Ropa Sans', sans-serif;
+  color: #626363;
+  font-size: 30pt; 
+ }
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://fonts.googleapis.com/css?family=Ropa+Sans:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=News+Cycle);
+
+.signup h1 {
+  color: #626363;
+}
+
+.login h1 {
+  color: #626363;
+}
+
+.signup {
+  background-image:url('social_bg.png');
+}
