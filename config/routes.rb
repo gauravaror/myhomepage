@@ -21,7 +21,7 @@ Myhomepage::Application.routes.draw do
   match '/signup', to: 'users#new'
   match '/tag/:id', to: 'posts#tag',as: 'tagspost'
   
-
+  match '*path' => redirect('/')
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
