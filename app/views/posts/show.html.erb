@@ -4,7 +4,8 @@
   <h1 class="blogposttitle"> <%= link_to @post.title,post_path(@post) %> </h1>
     <p class="content"> <%= @post.content  %> </p>
     <p>  <%= link_to "Edit", edit_post_path(@post.id) if current_user %> &nbsp; 
-     <%= link_to "Delete", post_path(@post.id), :confirm =>  "Are you sure?", :method => :delete if current_user %> </p> 
+     <%= button_to "delete", @post ,:method =>:delete,:class=>:destroy if current_user%> 
+   </p> 
     <div class="Tagsonbase">
       <%= render 'tags' %>
     </div>
