@@ -8,6 +8,13 @@ gem 'bootstrap-sass', '~> 3.2.0'
 gem 'sass-rails', '>= 3.2'
 
 
+# Gems for image upload
+gem 'dragonfly'
+gem 'dragonfly-s3_data_store'
+group :production do
+  gem 'rack-cache', :require => 'rack/cache'
+end
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

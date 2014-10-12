@@ -20,6 +20,7 @@ Myhomepage::Application.routes.draw do
   match '/logout', to: 'sessions#destroy'
   match '/signup', to: 'users#new'
   match '/tag/:id', to: 'posts#tag',as: 'tagspost'
+  #match '/posts/:id' to: 'posts#delete' ,as: 'deletepost', method: 'delete'
   
   match '*path' => redirect('/')
   # The priority is based upon order of creation:
