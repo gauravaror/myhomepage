@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8'
+gem 'rails', '4.0.1'
 gem "bcrypt"
 gem "dynamic_form"
-
+gem 'rake', '10.3.2'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'sass-rails', '>= 3.2'
 
